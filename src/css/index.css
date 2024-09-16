@@ -1,12 +1,11 @@
 h1, h2, h3, h4, h5, h6 {
    padding: var(--spaceIn);
 }
-a, i {
+a {
    color: var(--colorWhitish);
    text-decoration: none;
 }
 p {
-   text-align: justify;
    padding-top: var(--spaceIn);
 }
 button {
@@ -23,58 +22,24 @@ body {
    height: 100vh;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: start;
    background-color: var(--colorWhitish);
    align-items: center;
    animation: bgColor 3s;
+   gap: var(--spaceIn)
 }
 header, footer, main, section, form, .footerInfo {
    width: 100%;
-   background-color: var(--color4); 
-
    display: flex;
    justify-content: space-around;
 }
 header {
    background-color: var(--color6);
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
    /* position: sticky;
    top: 0; */
 }
-header i, header img {
-   width: 32px;
-   margin: var(--spaceIn);
-   padding: var(--spaceIn);
-   border: none;
-   font-size: 18pt;
-   cursor: pointer;
-   color:var(--color6);
-}
-header i:hover {
-   color: var(--color4);;
-   border-radius: var(--spaceIn);
-
-   background-color: var(--colorWhitish);
-   transition: var(--transition);
-}
-header i:active {
-   color: var(--color7);
-}
-
-main {
-   width: 90%;
-   justify-content: center;
-   background-color: var(--colorWhitish);
-   justify-content: space-between;
-}
-main img {
-   margin: 50px;
-   width: 600px;
-   height: 400px;
-   border: .5px solid black;
-}
-
 footer {
    font-size: 10pt;
    color: var(--colorWhitish);
@@ -90,6 +55,19 @@ footer p {
       unecessary, since body is 'space-between' */
 }
 
+
+.infoTitle {
+   font-size: 12pt;
+   font-weight: bold;
+}
+.logoInfo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: var(--colorWhitish);
+   font-weight: bold;
+   font-size: 16pt;
+}
 .footerInfo {
    width: 100%;
    height: auto;
@@ -101,16 +79,106 @@ footer p {
    margin: 2px 0;
    padding: 5px 10px;
 }
-.infoTitle {
-   font-size: 12pt;
-   font-weight: bold;
+
+header i, header img {
+   width: 32px;
+   margin: var(--spaceIn);
+   padding: var(--spaceIn);
+   border: none;
+   font-size: 18pt;
+   cursor: pointer;
+   color: var(--colorWhitish);
 }
-.logoInfo {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   color:white;
-   font-weight: bold;
-   font-size: 16pt;
+header i:hover {
+   color: var(--color4);;
+   background-color: var(--colorWhitish);
+}
+header i:active {
+   color: var(--color7);
+}
+.headerLink {
+    margin-right: var(--spaceIn);
+}
+.headerLink i {
+   color: var(--colorWhitish);
 }
 
+main {
+   width: 90%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: var(--spaceIn);
+}
+main img {
+   margin: 0 50px;
+   width: 100%;
+   height: 200px;
+   border: .5px solid var(--colorBlackish);
+}
+
+.banner {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+.bannerImg {
+   width: 100%;
+}
+.bestProducts, .offers, .categories, .categoryCards {
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+   /* background-color: lime; */
+   gap:0;
+}
+.categories {
+   flex-direction: row;
+}
+.categoriesList {
+   height: 300px;
+   border-right: 2px solid black;
+}
+.categoriesList ul {
+   list-style: none;
+   
+}
+.categoryCards p {
+   padding: 3px;
+   font-size: 10pt;;
+}
+.catCard {
+   width: 100px;
+
+}
+.catCardImage {
+   margin: 0;
+   width: 100px;
+   height: 100px;
+
+}
+.bestProductImage {
+   margin: 0;
+   width: 30%;
+   border: .5px solid black;
+}
+.bestProductImageIn {
+   margin: 0;
+   width: 100%;
+   height: 100px;
+   border: .5px solid black;
+}
+.productImages {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap:0;
+}
+.productImagesIn {
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   height: 100px;
+   gap: 0;
+}
