@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- fonts from google (SUSE e Protest Guerrilla) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,34 +28,32 @@
     </header>
 
     <main>
-        <div>
-            <img class="logo" src="../../img/logo.png" alt="logo" title="logo">
-        </div>
-        <form action="">
+        <img class="leftImage" src="../../img/logo.png" alt="imagem" title="imagem">
+        <div class="cadastro">
             <h2>LOGIN</h2>
-            <label for="email">E-mail</label>
-            <input type="text" name="" id="email">
-            <label for="pass">Nome</label>
-            <input type="text" name="" id="´pass">
-            <div>
-                <p>Não lembra sua senha?</p>
-                <button type="button">LOGIN</button>
-                <hr>
-                <p>Novo na plataforma? <a href="cadastro.html">Crie uma conta!</a></p>
-            </div>
-        </form>
+            <form action="">
+                <label for="email">E-mail</label>
+                <input type="text" name="" id="email">
+                <label for="pass1">Senha</label>
+                <input type="text" name="" id="´pass1">
+            </form>
+            <p>Não lembra a sua senha?</p>
+            <button class="formButton" type="button">LOGIN</button>
+            <div class="linha"></div>
+            <p>Novo na plataforma? <a href="cadastro.html">Crie uma conta!</a></p>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="footerInfo">
             <div>
-                <h4>Contatos</h4>
+                <p class="infoTitle">Contatos</p>
                 <p>Telefone: 999999999</p>
                 <p>E-mail: loginha@gmail.com</p>
             </div>
-            <div class="footerContatos">
-                <h4>Sobre a conta</h4>
-                <p>Faça o login!</p>
+            <div>
+                <p class="infoTitle">Sobre a conta</p>
+                <p><a href="#">Faça o login!</a></p>
             </div>
         </div>
         <div>

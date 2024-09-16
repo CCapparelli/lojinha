@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- fonts from google (SUSE e Protest Guerrilla) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,25 +28,24 @@
     </header>
 
     <main>
-        <div>
-            <img class="logo" src="../../img/logo.png" alt="logo" title="logo">
-        </div>
-        <form action="">
+        <img class="leftImage" src="../../img/logo.png" alt="imagem" title="imagem">
+        <div class="cadastro">
             <h2>CADASTRO</h2>
-            <label for="pass">Nome</label>
-            <input type="text" name="" id="´pass">
-            <label for="email">E-mail</label>
-            <input type="text" name="" id="email">
-            <label for="pass1">Senha</label>
-            <input type="text" name="" id="´pass1">
-            <label for="pass2">Repetir senha</label>
-            <input type="text" name="" id="´pass2">
-            <div>
-                <button type="button">CADASTRO</button>
-                <hr>
-                <p>Possui uma conta? <a href="./">Faça o login!</a></p>
-            </div>
-        </form>
+            <form action="">
+                <label for="pass">Nome</label>
+                <input type="text" name="" id="´pass">
+                <label for="email">E-mail</label>
+                <input type="text" name="" id="email">
+                <label for="pass1">Senha</label>
+                <input type="text" name="" id="´pass1">
+                <label for="pass2">Repetir senha</label>
+                <input type="text" name="" id="´pass2">
+            </form>
+            <button class="formButton" type="button">CADASTRO</button>
+            <hr>
+            <div class="linha"></div>
+            <p>Possui uma conta? <a href="./">Faça o login!</a></p>
+        </div>
     </main>
 
     <footer class="footer">
@@ -56,7 +57,7 @@
             </div>
             <div class="footerContatos">
                 <h4>Sobre a conta</h4>
-                <p>Faça o login!</p>
+                <p><a href="./">Faça o login!</a></p>
             </div>
         </div>
         <div>
