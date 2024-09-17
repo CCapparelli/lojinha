@@ -1,0 +1,45 @@
+.item, .itemDetails, .itemStars, .sugestions, .sugestionCards {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lime; */
+    gap:0;
+ }
+ .item, .itemStars, .sugestions {
+    flex-direction: row;
+    gap: 10px;
+ }
+
+.sugestionCards {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+ }
+ .sugestionCard {
+    width: 120px;
+ }
+ .sugestionCardImage {
+    margin: 0;
+    width: 120px;
+    height: 120px;
+ 
+ }
+ .sugestionCardCatName {
+    width: 120px;
+    padding: 3px;
+    font-size: 8pt;
+ }
+ .sugestionCardProdName {
+    width: 120px;
+    padding: 3px;
+    font-size: 11pt;
+ }
+ .sugestionCardPrice {
+    width: 120px;
+    padding: 3px;
+    font-size: 8pt;
+ }
