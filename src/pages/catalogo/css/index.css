@@ -1,14 +1,52 @@
-.item, .itemDetails, .itemStars, .sugestions, .sugestionCards {
+body {
+   animation: none;
+}
+.itemInfo .itemDetails, .itemStars, .sugestions, .sugestionCards {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: lime; */
     gap:0;
  }
- .item, .itemStars, .sugestions {
+ .item, .itemStars, .itemFooter, .sugestions {
+    width: 100%;
+    display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: start;
     gap: 10px;
+ }
+ .itemInfo {
+   height: 300px;
+   justify-content: space-between;
+ }
+ .itemFooter {
+   border-top: 2px solid black;
+   justify-content: space-between;
+ }
+ .itemFooter p {
+   font-size: 14pt;
+ }
+ .itemName {
+   padding: 0;
+ }
+ .item img {
+   margin: 0;
+   width: 500px;
+   height: 300px;
+ }
+.itemName {
+   font-size: 18pt;
+}
+.itemStars {
+   color: var(--colorGray);
+   padding-top: var(--spaceIn);
+ }
+ .itemStarMark {
+   color: goldenrod;
+ }
+ .itemFooter button {
+   background-color: var(--colorBlackish);
  }
 
 .sugestionCards {
@@ -36,7 +74,9 @@
  .sugestionCardProdName {
     width: 120px;
     padding: 3px;
+    padding-top: 0;
     font-size: 11pt;
+    font-weight: bold;
  }
  .sugestionCardPrice {
     width: 120px;

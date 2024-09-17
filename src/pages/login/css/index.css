@@ -1,7 +1,11 @@
+body {
+   animation: none;
+   justify-content: space-between;
+}
 main {
    flex-direction: row;
    justify-content: center;
-    align-items: center;
+   align-items: center;
 }
 main img {
    width: 600px;
@@ -28,6 +32,7 @@ form {
  }
  
  .cadastro {
+   width: 400px;
     color: var(--colorBlackish);
     display: flex;
     flex-direction: column;
@@ -44,7 +49,6 @@ form {
     margin-top: var(--spaceIn);
     background-color: var(--colorBlackish);
  }
-
 
  .formButton {
     background-color: var(--colorBlackish);
