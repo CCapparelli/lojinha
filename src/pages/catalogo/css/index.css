@@ -1,14 +1,17 @@
 body {
    animation: none;
 }
-.itemInfo .itemDetails, .itemStars, .sugestions, .sugestionCards {
+
+
+.itemInfo, .itemDetails, .itemStars {
     width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:0;
+    gap: 0;
  }
- .item, .itemStars, .itemFooter, .sugestions {
+.item, .itemStars, .itemFooter {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -24,20 +27,19 @@ body {
    border-top: 2px solid black;
    justify-content: space-between;
  }
- .itemFooter p {
-   font-size: 14pt;
+ .itemName, .itemFooter p {
+   font-size: var(--textSizeLXX);
+   font-weight: bold;
  }
- .itemName {
-   padding: 0;
+ .itemPrice {
+   font-size: var(--textSize);
  }
  .item img {
    margin: 0;
    width: 500px;
    height: 300px;
  }
-.itemName {
-   font-size: 18pt;
-}
+
 .itemStars {
    color: var(--colorGray);
    padding-top: var(--spaceIn);
@@ -48,38 +50,52 @@ body {
  .itemFooter button {
    background-color: var(--colorBlackish);
  }
+ .itemDetails {
+   justify-content: start;
+   align-items: start;
+ }
 
-.sugestionCards {
+ .suggestions {
+   width: 100%;
+   padding: var(--spaceOut) 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.suggestionCards {
+    width: 100%;
     padding-left: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spaceIn);
  }
- .sugestionCard {
+ .suggestionCard {
     width: 120px;
  }
- .sugestionCardImage {
+ .suggestionCardImage {
     margin: 0;
     width: 120px;
     height: 120px;
  
  }
- .sugestionCardCatName {
+ .suggestionCardCatName {
     width: 120px;
     padding: 3px;
-    font-size: 8pt;
+    font-size: var(--textSizeS);
  }
- .sugestionCardProdName {
+ .suggestionCardProdName {
     width: 120px;
     padding: 3px;
     padding-top: 0;
-    font-size: 11pt;
+    font-size: var(--textSize);
     font-weight: bold;
  }
- .sugestionCardPrice {
+ .suggestionCardPrice {
     width: 120px;
     padding: 3px;
-    font-size: 8pt;
+    font-size: var(--textSizeS);
  }

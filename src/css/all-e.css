@@ -1,0 +1,139 @@
+h1, h2, h3, h4, h5, h6 {
+   padding: var(--spaceIn);
+   font-family: var(--fontSans2);
+}
+a {
+   color: var(--colorWhitish);
+   text-decoration: none;
+}
+p {
+   padding-top: var(--spaceIn);
+}
+button {
+   margin-top: 10px;
+   padding: 5px var(--spaceIn);
+   color: var(--colorWhitish);
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: var(--spaceIn);
+ 
+   background-color: var(--colorWhitish);
+   animation: bgColor 3s;
+}
+header, footer {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+main, section, form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+main {
+   width: 90%;
+}
+main img {
+   height: 300px;
+}
+header {
+   background-color: var(--color6);
+   justify-content: space-between;
+   align-items: center;
+   position: sticky;
+   top: 0;
+   z-index: 999999;
+}
+header img {
+   width: 32px;
+   margin: var(--spaceIn);
+   padding: var(--spaceIn);
+   border: none;
+   cursor: pointer;
+}
+header i {
+   font-size: 18pt;
+   padding: var(--spaceIn);
+   cursor: pointer;
+   color: var(--colorWhitish);
+}
+
+.headerLink {
+   color: var(--colorWhitish);
+   font-weight: bold;
+   margin-right: var(--spaceIn);
+}
+.headerLink i {
+  color: var(--colorWhitish);
+}
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--colorWhitish);
+   font-weight: bold;
+   font-size: var(--textSizeLXX);
+}
+
+
+footer {
+   flex-direction: column;
+   align-items: center;
+   font-size: var(--textSize);
+   color: var(--colorWhitish);
+   background-color: var(--colorBlackish);
+}
+footer p {
+   padding: var(--spaceIn) 0;
+   /* justify-content: center; 
+      unecessary, since body is 'space-between' */
+}
+.footerInfo {
+   width: 100%;
+   display: flex;
+   justify-content: start;
+}
+.footerInfo p {
+   /* margin: 2px 0; */
+   padding: 5px 10px;
+}
+.infoTitle {
+   font-size: 12pt;
+   font-weight: bold;
+}
+.infoLogin:hover {
+   color: var(--color4);
+   text-decoration: underline;
+}
+.infoLogin:active {
+   color: var(--color7);
+}
+
+img:hover {
+   background-color: var(--color3);
+}
+img:active {
+   background-color: var (--colorWB5);
+}
+header img:hover {
+   background-color: var(--color6);
+}
+header a:hover, header i:hover {
+   color: var(--color4);;
+}
+header a:active, header i:active {
+   color: var(--color7);
+}
+
+
